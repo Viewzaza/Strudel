@@ -4,9 +4,10 @@ This repository contains scripts for the [Strudel](https://strudel.cc/) live cod
 
 ## Files
 
+- **[looping_edm.js](looping_edm.js)**: **(RECOMMENDED)** An infinite, crash-proof EDM loop.
+- **[epic_edm.js](epic_edm.js)**: A massive 6-minute EDM arrangement (200+ lines).
 - **[breakcore.js](breakcore.js)**: Interactive, "mega hard" breakcore (220 BPM).
-- **[edm.js](edm.js)**: Interactive EDM/Progressive House with filter sweeps (128 BPM).
-- **[acid_techno.js](acid_techno.js)**: Hardcore Acid Techno with 303 manipulation (145+ BPM).
+- **[acid_techno.js](acid_techno.js)**: Hardcore Acid Techno with 303 manipulation.
 
 ## How to Use
 
@@ -16,21 +17,26 @@ This repository contains scripts for the [Strudel](https://strudel.cc/) live cod
 4. Press `Ctrl + Enter` (or `Cmd + Enter`) to run the code.
 5. **Enable Visuals**: Click "Piano Roll" and "Scope" in the top bar.
 6. **Use Sliders**: Adjust the sliders that appear at the top of the editor.
+7. **Troubleshooting**:
+   - If you see **"still loading sound"** logs, this is normal! Wait a few seconds for the samples to download.
+   - If sound stops, try the `looping_edm.js` script.
+   - Refresh the page if the audio engine crashes.
 
 ### Script Features
 
+#### Looping EDM
+- **Stability**: Designed to loop infinitely without stopping.
+- **Controls**: Cutoff & Build-up.
+- **Structure**: 4-Section Loop (Intro -> Build -> Drop -> Break).
+
+#### Epic EDM
+- **Length**: ~200 Lines.
+- **Arrangement**: Full song structure.
+
 #### Breakcore
 - **Controls**: Speed, Bitcrush, Filter.
-- **Sound**: Chaotic chopped breaks and piano rolls.
-
-#### EDM
-- **Controls**: Cutoff (Filter Sweep), Resonance, Build-up.
-- **Sound**: Anthem supersaws and offbeat bass.
+- **Sound**: Chaotic chopped breaks.
 
 #### Acid Techno
-- **Controls**:
-  - **Cutoff**: Controls the "Acid" squelch frequency.
-  - **Resonance**: Increases the screaming character of the acid line.
-  - **Distortion**: Adds hardcore grit to the kick and percussion.
-  - **Speed**: Adjustable BPM slider.
-- **Sound**: 303-style basslines and rumble kicks.
+- **Controls**: Acid Cutoff & Resonance.
+- **Sound**: 303-style basslines.

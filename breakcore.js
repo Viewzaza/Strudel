@@ -84,7 +84,11 @@ const bass = note("0 [0 7] 0 [3 5]").scale("D:minor")
 
 // 7. Rave Stabs
 // Chords: Dm -> Bb -> Gm -> A7
-const chords = note("d3min as3maj g3min a3dom7");
+// Using scale degrees (0=D, 5=Bb, 3=G, 4=A) and chords
+const chords = note("0 5 3 4")
+  .scale("D:minor")
+  .chord("<minor major minor dom7>");
+
 const stabs = chords
   .superimpose(x => x.add(12)) // Octave up
   .s("clavisynth")
@@ -96,8 +100,10 @@ const stabs = chords
 
 // 8. Piano "Roll Notes"
 // Fast arpeggios for that breakcore feeling
-const piano = note("d4min as4maj g4min a4dom7")
-  .arpeggiate() // Turn chords into runs
+const piano = note("0 5 3 4")
+  .scale("D:minor")
+  .chord("<minor major minor dom7>")
+  .arp("up")    // Turn chords into runs
   .fast(4)      // Make them fast "rolls"
   .s("steinway")
   .velocity(rand.range(0.5, 1).segment(16))

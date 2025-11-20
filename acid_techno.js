@@ -71,11 +71,12 @@ const hats = stack(
 // 5. Dark Pad (Atmosphere)
 const pad = note("0 4")
   .scale("F:phrygian")
-  .s("vibraphone_bowed")
+  .s("sawtooth") // Synth for instant loading
+  .attack(0.5).decay(0.5).sustain(0.8).release(2)
   .slow(4)
   .lpf(800)
   .room(0.9)
-  .gain(0.5);
+  .gain(0.4);
 
 // --- MAIN STACK ---
 stack(
